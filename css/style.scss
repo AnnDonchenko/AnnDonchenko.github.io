@@ -125,6 +125,98 @@ nav.navbar{
 		}
 	}
 }
+#technologies{
+	.margin-top{
+		margin-top: 2rem;
+	}
+	h2:last-of-type{
+		margin-top: 5rem;
+	}
+}
+
+#experience .experience-block{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	.exp-item{
+		// width: calc(50% - 1rem);
+		flex: 1 1 47%;
+		padding: 1rem;
+		margin: .5rem;
+		background: rgba(255,255,255,.1);
+		.position-name{
+			font-weight: 700;
+			letter-spacing: 0.3px;
+		}
+		.exp-flex{
+			display: flex;
+			justify-content: space-between;
+			margin: .5rem 0 .5rem .5rem;
+		}
+		p{
+			padding-left: .5rem;
+		}
+		.responsibility{
+			// display: none;
+			padding-left: 1.5rem;
+		}
+		.text-muted{
+			color: $text-white-75;
+			font-size: .9rem;			
+		}
+		// &:hover{
+		// 	.responsibility{
+		// 		display: block;
+		// 	}
+		// }
+	}
+}
+
+#portfolio{
+	.container{
+		margin-right: 0;
+		margin-left: 0;
+		max-width: 100%;
+	}
+	.portfolio-box{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		> div{
+			flex: 0 0 33.33333%;
+			max-width: 33.33333%;
+			.portfolio-item{
+				position: relative;
+				.portfolio-img{				
+					max-width: 100%;
+					height: auto;
+					display: block;
+				}
+				.portfolio-box-caption{
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					background: $blue-75;
+					color: $white;
+					.project-name{
+						font-weight: 700;
+						font-size: 1.5rem;
+					}
+				}
+			}
+			&:nth-child(odd) .portfolio-box-caption{
+				background: $orange-75;
+			}
+		}		
+	}
+}
+
 footer{
 	.container{
 		max-width: 80%;

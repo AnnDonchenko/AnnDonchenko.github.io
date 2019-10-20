@@ -126,6 +126,95 @@ nav.navbar ul {
     .tech-block .tech-item p {
       font-weight: bold; }
 
+#technologies .margin-top {
+  margin-top: 2rem; }
+#technologies h2:last-of-type {
+  margin-top: 5rem; }
+
+#experience .experience-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #experience .experience-block .exp-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 47%;
+            flex: 1 1 47%;
+    padding: 1rem;
+    margin: .5rem;
+    background: rgba(255, 255, 255, 0.1); }
+    #experience .experience-block .exp-item .position-name {
+      font-weight: 700;
+      letter-spacing: 0.3px; }
+    #experience .experience-block .exp-item .exp-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin: .5rem 0 .5rem .5rem; }
+    #experience .experience-block .exp-item p {
+      padding-left: .5rem; }
+    #experience .experience-block .exp-item .responsibility {
+      padding-left: 1.5rem; }
+    #experience .experience-block .exp-item .text-muted {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: .9rem; }
+
+#portfolio .container {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 100%; }
+#portfolio .portfolio-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #portfolio .portfolio-box > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%; }
+    #portfolio .portfolio-box > div .portfolio-item {
+      position: relative; }
+      #portfolio .portfolio-box > div .portfolio-item .portfolio-img {
+        max-width: 100%;
+        height: auto;
+        display: block; }
+      #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        background: rgba(42, 118, 154, 0.75);
+        color: #ffffff; }
+        #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption .project-name {
+          font-weight: 700;
+          font-size: 1.5rem; }
+    #portfolio .portfolio-box > div:nth-child(odd) .portfolio-box-caption {
+      background: rgba(244, 98, 58, 0.75); }
+
 footer .container {
   max-width: 80%;
   margin: 0 auto;
