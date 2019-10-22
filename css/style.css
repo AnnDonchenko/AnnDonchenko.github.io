@@ -207,13 +207,43 @@ nav.navbar ul {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        background: rgba(42, 118, 154, 0.75);
-        color: #ffffff; }
+        text-align: center;
+        background: radial-gradient(rgba(108, 117, 125, 0.75), #6c757d);
+        color: #ffffff;
+        margin: 50px 0;
+        padding: 10px;
+        -webkit-transition: visibility 0s, opacity 0.5s linear, margin 0.5s;
+        transition: visibility 0s, opacity 0.5s linear, margin 0.5s;
+        visibility: hidden;
+        opacity: 0; }
+        #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption .project-category {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption .project-link {
+          color: #ffffff;
+          font-size: 1.5rem;
+          padding: 5px; }
+          #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption .project-link:hover {
+            font-size: 1.6rem;
+            margin-top: -0.05rem;
+            margin-left: -0.05rem;
+            margin-right: -0.05rem;
+            margin-bottom: -0.05rem; }
         #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption .project-name {
           font-weight: 700;
           font-size: 1.5rem; }
-    #portfolio .portfolio-box > div:nth-child(odd) .portfolio-box-caption {
-      background: rgba(244, 98, 58, 0.75); }
+        #portfolio .portfolio-box > div .portfolio-item .portfolio-box-caption .project-description {
+          margin: 10px 0;
+          font-style: italic;
+          font-size: .9rem; }
+      #portfolio .portfolio-box > div .portfolio-item:hover .portfolio-box-caption {
+        visibility: visible;
+        opacity: 1;
+        margin: 0; }
 
 footer .container {
   max-width: 80%;
